@@ -21,15 +21,15 @@ Offline IDE's
 IDLE
 ^^^^
 
-.. figure:: ../images/IDE_IDLE.png
-   :alt: de IDLE IDE
-   :align: right
-
-   IDLE
-
 *IDLE* is de IDE van de makers van Python zelf. Wanneer je Python installeert, krijg je *IDLE* er automatisch bij. Het is een prima programmeeromgeving voor eenvoudige Python projecten.
 
 | Python downloaden: https://www.python.org/.
+
+.. figure:: ../images/IDE_IDLE.png
+   :alt: de IDLE IDE
+   :align: center
+
+   IDLE
 
 Mu
 ^^^
@@ -47,7 +47,7 @@ Mu
 Visual Studio Code
 ^^^^^^^^^^^^^^^^^^
 
-Veel gevorderde programmeurs gebruiken *Visual Studio Code* voor hun projecten. Deze IDE van Microsoft is niet speciaal gemaakt voor Python, je kunt er met vrijwel alle bestaande programmeertalen in werken, waaronder C#, JavaScript en PHP. De grote verscheidenheid aan mogelijkheden, maakt dat je niet zomaar met *VS Code* aan de slag kunt, je moet echt leren ermee te werken. 
+Veel gevorderde programmeurs gebruiken *Visual Studio Code* voor hun projecten. Deze IDE van Microsoft is niet speciaal gericht op Python; je kunt er met vrijwel alle bestaande programmeertalen in werken, waaronder C#, JavaScript en PHP. De grote verscheidenheid aan mogelijkheden maakt dat je niet zomaar met *VS Code* aan de slag kunt, je moet echt leren ermee te werken. 
 
 | Visual Studio Code downloaden: https://code.visualstudio.com/
 | Python in Visual Studio Code: https://code.visualstudio.com/docs/python/python-tutorial
@@ -64,4 +64,12 @@ Online IDE's
 Replit
 ^^^^^^
 
-...
+Als je wilt leren programmeren is de online IDE *Replit* een goede keuze. Je hoeft er niets voor te installeren, een account aanmaken is genoeg om direct te kunnen starten. De naam Replit is gebaseerd op de afkorting :term:`REPL`. Ook in Replit kun je meer programmeertalen gebruiken dan alleen Python. Een grote toegevoegde waarde van deze online IDE is dat je je programmeerprojecten met anderen kunt delen en in teams kunt samenwerken.
+
+| Replit gebruiken: https://replit.com/
+
+.. figure:: ../images/IDE_Replit.png
+   :alt: de Replit IDE
+   :align: center
+
+   Replit
