@@ -13,7 +13,8 @@ author = 'S. Faas'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['hoverxref.extension']
+extensions = ['hoverxref.extension',
+              'sphinx-prompt']
 
 templates_path = ['_templates']
 exclude_patterns = ['.venv']
