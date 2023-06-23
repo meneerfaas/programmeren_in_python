@@ -22,5 +22,11 @@ Verklarende woordenlijst
     Console
         Zie :term:`CLI`.
 
-    Interactieve Prompt.
+    Interactieve Prompt
         Zie :term:`CLI`.
+
+    Operator
+        Een symbool waarmee een bewerking (een operatie) op één of meerdere :term:`operanden<operand>` wordt aangeduid. Bijvoorbeeld de operators voor *optellen*, *aftrekken*, *vermenigvuldigen* en *delen* zijn ``+``, ``-``, ``*`` en ``/``. Operators kun je indelen in categorieën, zoals *rekenkundige* operators, *vergelijkings*\ operators en *logische* operators.
+
+    Operand
+        Een object, bijvoorbeeld een getal of een letter, waarmee een :term:`operator` een bewerking uitvoert. In de uitdrukking ``1 + 2`` is ``+`` de :term:`operator` en zijn ``1`` en ``2`` de operanden.
