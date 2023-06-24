@@ -14,7 +14,8 @@ author = 'S. Faas'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['hoverxref.extension',
-              'sphinx-prompt']
+              'sphinx-prompt',
+              'sphinx.ext.graphviz']
 
 templates_path = ['_templates']
 exclude_patterns = ['.venv']
@@ -29,3 +30,6 @@ html_static_path = ['_static']
 
 # -- Options for hoverxref extension------------------------------------------
 hoverxref_roles = ['term']
+
+# -- GraphViz configuration --------------------------------------------------
+graphviz_output_format = 'svg'
