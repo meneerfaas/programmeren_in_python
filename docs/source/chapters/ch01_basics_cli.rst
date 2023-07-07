@@ -100,7 +100,7 @@ Het antwoord op de deling :python:`345 / 23` wekt misschien enige verbazing. Waa
 Haakjes veranderen de rekenvolgorde
 -----------------------------------
 
-Door haakjes te gebruiken in berekeningen kun je de *standaard rekenvolgorde* aanpassen. Kijk maar eens naar de volgende twee berekeningen:
+Door haakjes te gebruiken in berekeningen kun je de `standaard rekenvolgorde <https://nl.wikipedia.org/wiki/Bewerkingsvolgorde>`_ aanpassen. Kijk maar eens naar de volgende twee berekeningen:
 
 .. prompt:: python >>> auto
     
@@ -109,35 +109,41 @@ Door haakjes te gebruiken in berekeningen kun je de *standaard rekenvolgorde* aa
     >>> (2 + 3) * 4
     20
 
-.. graphviz::
-    :name: sphinx.ext.graphviz
-    :caption: Sphinx and GraphViz Data Flow
-    :alt: How Sphinx and GraphViz Render the Final Document
-    :align: center
+In de berekening :python:`2 + 3 * 4` wordt volgens de standaard rekenvolgorde eerst de vermenigvuldiging :python:`3 * 4 = 12` uitgevoerd en daarna pas de optelling :python:`2 + 12 = 14`. In de berekening :python:`(2 + 3) * 4` geven de haakjes voorrang aan de optelling :python:`2 + 3 = 5` en wordt pas naarna vermenigvuldigd: :python:`5 * 4 = 20`.
 
-     digraph "sphinx-ext-graphviz" {
-         size="6,4";
-         rankdir="LR";
-         graph [fontname="Verdana", fontsize="12"];
-         node [fontname="Verdana", fontsize="12"];
-         edge [fontname="Sans", fontsize="9"];
+Machtsverheffen
+---------------
 
-         sphinx [label="Sphinx", shape="component",
-                   href="https://www.sphinx-doc.org/",
-                   target="_blank"];
-         dot [label="GraphViz", shape="component",
-              href="https://www.graphviz.org/",
-              target="_blank"];
-         docs [label="Docs (.rst)", shape="folder",
-               fillcolor=green, style=filled];
-         svg_file [label="SVG Image", shape="note", fontcolor=white,
-                 fillcolor="#3333ff", style=filled];
-         html_files [label="HTML Files", shape="folder",
-              fillcolor=yellow, style=filled];
+De vermenigvuldiging :math:`2\times2\times2` kun je korter schrijven als :math:`2^{3}`. Dit noemen we machtsverheffen: we verheffen :math:`2` tot de macht :math:`3`. Het getal :math:`2` heet in deze berekening het *grondtal* en het getal :math:`3` heet de *exponent*.
 
-         docs -> sphinx [label=" parse "];
-         sphinx -> dot [label=" call ", style=dashed, arrowhead=none];
-         dot -> svg_file [label=" draw "];
-         sphinx -> html_files [label=" render "];
-         svg_file -> html_files [style=dashed];
-     }
+.. figure:: ../images/machtsverheffen.svg
+   :alt: machtsverheffen
+   :align: center
+
+De exponent geeft aan hoe vaak je het grondtal met zichzelf vermenigvuldigt. Bijvoorbeeld de machtsverheffing :math:`3^{5}` betekent :math:`3\times3\times3\times3\times3`. Je spreekt de berekening uit als 'drie tot de macht vijf' of 'drie tot de vijfde (macht)'.
+
+De Python operator voor machtsverheffen is :python:`**`. Best logisch als je bedenkt dat machtsverheffen neerkomt op herhaald vermenigvuldigen.
+
+.. prompt:: python >>> auto
+    
+    >>> 2 ** 3
+    8
+    >>> 2 * 2 * 2
+    8
+    >>> 3 ** 5
+    243
+    >>> 3 * 3 * 3 * 3 * 3
+    243
+
+Delen met rest
+--------------
+Wanneer je in Python twee getallen deelt met de :python:`/` operator, is het resultaat een decimaal getal: een getal met een komma.
+
+.. prompt:: python >>> auto
+    
+    >>> 345 / 23
+    15.0
+    >>> 345 / 12
+    28.75
+
+Op de basisschool heb je waarschijnlijk 'delen met rest' geleerd.
