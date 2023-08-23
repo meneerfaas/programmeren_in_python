@@ -15,6 +15,7 @@ author = 'S. Faas'
 
 extensions = ['hoverxref.extension',
               'sphinx-prompt',
+              'sphinx_exercise',
               'sphinx.ext.graphviz']
 
 templates_path = ['_templates']

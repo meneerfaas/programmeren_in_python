@@ -146,4 +146,59 @@ Wanneer je in Python twee getallen deelt met de :python:`/` operator, is het res
     >>> 345 / 12
     28.75
 
-Op de basisschool heb je waarschijnlijk 'delen met rest' geleerd.
+Op de basisschool heb je waarschijnlijk 'delen met rest' geleerd, bijvoorbeeld door een staartdeling te maken zoals hieronder.
+
+.. figure:: ../images/staartdeling.svg
+   :alt: staartdeling
+   :align: center
+
+De uitkomst van :math:`345:12` is volgens deze berekening :math:`28\text{ rest }9`. In Python heb je voor dit resultaat twee aparte operators nodig: :python:`//` en :python:`%`. Met de operator :python:`//` verkrijg je de *naar beneden afgeronde uitkomst* van de deling en met :python:`%` de rest van de deling.
+
+.. prompt:: python >>> auto
+    
+    >>> 345 // 12
+    28
+    >>> 345 % 12
+    9
+
+Overzicht rekenkundige operators
+---------------------------------
+In dit hoofdstuk heb je de onderstaande rekenkundige operators leren kennen.
+
+.. list-table:: Rekenkundige operators
+    :header-rows: 1
+    :align: center
+
+    * - Operator
+      - Naam
+      - Voorbeeld
+      - Uitkomst
+    * - :python:`+`
+      - Optellen (som)
+      - :python:`7 + 3`
+      - :python:`10`
+    * - :python:`-`
+      - Aftrekken (verschil)
+      - :python:`7 - 3`
+      - :python:`4`
+    * - :python:`*`
+      - Vermenigvuldigen (product)
+      - :python:`7 * 3`
+      - :python:`21`
+    * - :python:`/`
+      - Delen (quotiënt)
+      - :python:`7 / 3`
+      - :python:`2.3333333333333335`
+    * - :python:`**`
+      - Machtsverheffen
+      - :python:`7 ** 3`
+      - :python:`343`
+    * - :python:`//`
+      - Geheeltallige deling
+      - :python:`7 // 3`
+      - :python:`2`
+    * - :python:`%`
+      - Rest of modulus
+      - :python:`7 % 3`
+      - :python:`1`
+
